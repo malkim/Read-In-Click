@@ -3,21 +3,20 @@ import Button from '@material-ui/core/Button';
 import './homePage.css'
 import { useHistory } from "react-router-dom";
 
-
-
-
-
 const Home=()=>{
     let history = useHistory();
 
     function goToRate() {
         history.push("/rate");
       }
+    function goToExist() {
+        history.push("/exist");
+      }
     
     
     return (
    <div>
-    <div className='title'> Read In Click </div>
+    <h1 className='title'> Read In Click </h1>
       <br></br>
       <div className='wrrapbt'>
       <Button variant="contained" color="secondary" onClick={goToRate}>
@@ -25,7 +24,7 @@ const Home=()=>{
 </Button>
 <br></br>
 <br></br>
-<Button variant="contained" color="secondary">
+<Button variant="contained" color="secondary" onClick={goToExist}>
 למשתמש קיים
 </Button>
         </div>

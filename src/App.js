@@ -1,29 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Home from './components/homePage'
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
+import OldUser from './components/oldUser';
+import NewUser from './components/newUser';
+import Report from './components/report';
 
 
 function App() {
   return (
     <div>
-      
-      
-      <Router>
-        <Switch>
+   <Router>
+      <Switch>
+      <Route path="/report">
+            <Report/>         
+          </Route>
           <Route path="/rate">
-            <rate />
+            <NewUser/>         
+          </Route>
+          <Route path="/exist">
+            <OldUser />
           </Route>
           <Route path="/">
             <Home />
-          </Route>
-        </Switch>
+          </Route>         
+      </Switch>
 </Router>
     </div>
   );

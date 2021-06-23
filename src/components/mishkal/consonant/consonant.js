@@ -1,29 +1,23 @@
-import React from 'react'
-import Word from '../onesyllable/word'
+import React, { useState, useEffect } from 'react'
+import ShoWord from '../shoWord'
 
-const Consonant = () => {
-    //we have to change the names
-    const gina = () => {
-        return (<Word id="gina" />)
-    }
-    const chani = () => {
-        return (<Word id="chani" />)
+const OneSyllable = () => {
+    const [nikud, setNikud] = useState('');
+    useEffect(() => {
+        fetch('localhost:3000/wordsController/' + nikud)
+            .then(response => response.json())
+            .then(data => <ShoWord data={data} />)
+    }, [nikud])
 
-    }
-    const ola = () => {
-        return (<Word id="ola" />)
-
-    }
-    const tzura = () => {
-        return (<Word id="tzura" />)
-
-    }
-    const mix = () => {
-        return (<Word id="mix" />)
-
-    }
     return (
-        <div>consonant</div>
+        <div>
+            <button onClick={() => setNikud('kamatz')}>kamatz</button>
+            <button onClick={() => setNikud('chirik')}>chirik</button>
+            <button onClick={() => setNikud('cholam')}>cholam</button>
+            <button onClick={() => setNikud('segol')}>segol</button>
+            <button onClick={() => setNikud('shuruk')}>shuruk</button>
+
+        </div>
     )
 }
-export default Consonant;
+export default OneSyllable;

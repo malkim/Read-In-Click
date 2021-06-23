@@ -1,8 +1,6 @@
 import React from 'react'
 import { useHistory } from "react-router-dom";
 
-//import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
-
 const Mishkal = () => {
 
     let history = useHistory();

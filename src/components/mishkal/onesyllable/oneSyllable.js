@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import Word from './word'
 import ShoWord from '../shoWord'
 
 const OneSyllable = () => {

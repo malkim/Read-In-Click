@@ -16,7 +16,6 @@ import Consonant from './mishkal/consonant/consonant';
 import SameVowel from './mishkal/twoSyllable/sameVowel';
 import DifferentVowel from './mishkal/twoSyllable/differentVowel';
 import Choose from './choose'
-import Word from './mishkal/onesyllable/word';
 
 
 function Routing() {

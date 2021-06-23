@@ -1,24 +1,23 @@
-import React from 'react'
 import ShoWord from '../shoWord'
+import React, { useState, useEffect } from 'react';
 
 const DifferentVowel = () => {
 
     const [nikud, setNikud] = useState('')
     useEffect(() => {
 
-        fetch('localhost8080/wordsController/' + nikud)
+        fetch('localhost6666/word/get' + nikud)
             .then(response => response.json())
             .then(data => <ShoWord data={data} />)
-            , nikud
-    })
+            .catch(error => { console.error(error) })
+    }, [nikud] )
+ 
     return (
         <div>
             <button onClick={() => setNikud('gina')}>gina</button>
             <button onClick={() => setNikud('chani')}>chani</button>
             <button onClick={() => setNikud('ola')}>ola</button>
             <button onClick={() => setNikud('tzura')}>tzura</button>
-            <button onClick={() => setNikud('mix')}>mix</button>
-            h
         </div>
     )
 }

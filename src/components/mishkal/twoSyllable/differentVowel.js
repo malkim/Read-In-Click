@@ -18,6 +18,7 @@ const DifferentVowel = () => {
             <button onClick={() => setNikud('ola')}>ola</button>
             <button onClick={() => setNikud('tzura')}>tzura</button>
             <button onClick={() => setNikud('mix')}>mix</button>
+            h
         </div>
     )
 }

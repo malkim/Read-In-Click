@@ -4,10 +4,7 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-//import OldUser from './components/oldUser';
 import NewUser from './newUser';
-//import Report from './components/report';
-//import Choose from './components/choose'
 import HomePage from './homePage';
 import Mishkal from './mishkal/mishkal';
 import OneSyllable from './mishkal/onesyllable/oneSyllable';

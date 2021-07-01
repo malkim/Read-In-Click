@@ -5,7 +5,7 @@ import {
     Route
 } from "react-router-dom";
 //import NewUser from './newUser';
-import HomePage from './homePage';
+import HomePage from './login/homePage';
 import Mishkal from './mishkal/mishkal';
 import OneSyllable from './mishkal/onesyllable/oneSyllable';
 import TwoSyllable from './mishkal/twoSyllable/twoSyllable';
@@ -13,7 +13,7 @@ import Consonant from './mishkal/consonant/consonant';
 import SameVowel from './mishkal/twoSyllable/sameVowel';
 import DifferentVowel from './mishkal/twoSyllable/differentVowel';
 import Choose from './choose'
-import SignUp from './login/signup';
+import SignUp from './login/signUp';
 import SignIn from './login/signIn';
 
 

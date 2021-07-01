@@ -1,5 +1,5 @@
 
-export const signupApi = (user) => {
+export const signUpApi = (user) => {
   console.log("user", user);
   return fetch(`http://localhost:3000/signUp`, {
       method: "POST",

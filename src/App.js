@@ -6,11 +6,18 @@ import {
   Route
 } from "react-router-dom";
 
-import Login from './login/api';
+//import Login from './login/api';
 import Routing from './components/router'
 
 
 function App() {
+
+  const Signup=()=>{
+
+  }
+  const Login=()=>{
+
+  }
 
 
   return (

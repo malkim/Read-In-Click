@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
+//import { signUpApi } from './loginApi'
 import { signUpApi } from './loginApi'
+
 import { useHistory } from 'react-router-dom'
 
 function SignUp() {
@@ -10,7 +12,7 @@ function SignUp() {
 
     const history = useHistory();
 
-    signUp = () => {
+    const signUp = () => {
         signUpApi({ user })
             .then(() => {
                 history.push('/signUp')

@@ -1,11 +1,17 @@
 import React from 'react'
-const ShoWord = (props) => {
-    return
-    (
-        <div>
-        { props.data.map((word)) }
-        </div>
-    )
+
+
+const ShoWord = () => {
+    return(<div></div>)
+    // return
+    // (
+    //     <div>
+    //         hello
+    //     {/* { props.data.map((word)=>{
+    //         <div></div>
+    //     }) } */}
+    //     </div>
+    // )
 
 
 }

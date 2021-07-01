@@ -5,7 +5,7 @@ const SameVowel = () => {
     const [nikud, setNikud] = useState('')
     useEffect(() => {
 
-        fetch('localhost6666/word/get' + nikud)
+        fetch('localhost:6666/word/get' + nikud)
             .then(response => response.json())
             .then(data => <ShoWord data={data} />)
             .catch(error => { console.error(error) })

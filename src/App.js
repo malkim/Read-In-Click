@@ -6,16 +6,19 @@ import {
   Route
 } from "react-router-dom";
 
-import Login from './api';
+import Login from './login/api';
 import Routing from './components/router'
 
 
 function App() {
 
- 
-  return (<div>
-    <Routing/>
-    <button onClick={Login}>Login</button>
-  </div>);
+
+  return (
+    <div>
+      <Routing />
+      <button onClick={Login}>משתמש קיים</button>
+      <button onClick={Signup}>משתמש חדש</button>
+
+    </div>);
 }
 export default App;

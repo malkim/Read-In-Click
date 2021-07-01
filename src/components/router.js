@@ -4,7 +4,7 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import NewUser from './newUser';
+//import NewUser from './newUser';
 import HomePage from './homePage';
 import Mishkal from './mishkal/mishkal';
 import OneSyllable from './mishkal/onesyllable/oneSyllable';
@@ -13,6 +13,8 @@ import Consonant from './mishkal/consonant/consonant';
 import SameVowel from './mishkal/twoSyllable/sameVowel';
 import DifferentVowel from './mishkal/twoSyllable/differentVowel';
 import Choose from './choose'
+import SignUp from './login/signup';
+import SignIn from './login/signIn';
 
 
 function Routing() {
@@ -44,8 +46,11 @@ function Routing() {
                     <Route path="/choose">
                         <Choose />
                     </Route>
-                    <Route path="/newUser">
-                        <NewUser />
+                    <Route path="/signIn">
+                        <SignIn />
+                    </Route>
+                    <Route path="/signUp">
+                        <SignUp />
                     </Route>
                     <Route path="/">
                         <HomePage />

@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '@material-ui/core/Button';
 import './homePage.css'
 import { useHistory } from "react-router-dom";
+import signUp from './signUp'
 
 const HomePage = () => {
   let history = useHistory();
@@ -10,7 +11,7 @@ const HomePage = () => {
     history.push("/choose");
   }
   function goToNewtUser() {
-    history.push("/newUser");
+    history.push("/signUp");
   }
 
 

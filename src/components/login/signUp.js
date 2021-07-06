@@ -32,7 +32,7 @@ function SignUp() {
         <input onChange={(e) => { setId(e.target.value) }}></input>
         <div>הכנס סטטוס</div>
         <input onChange={(e) => { setStatus(e.target.value) }}></input>
-        <button onClick={signUpApi()}>לשמירת הנתונים</button>
+        <button onClick={signUp()}>לשמירת הנתונים</button>
     </div>)
 }
 

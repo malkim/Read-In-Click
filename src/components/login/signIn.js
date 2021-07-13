@@ -10,6 +10,10 @@ function SignIn() {
   const [id, setId] = useState('')
   const history = useHistory();
 
+  function goToChoose() {
+    history.push("/choose");
+  }
+  
   useEffect(() => {
     signInApi(user)
       .then(() => {
@@ -25,6 +29,7 @@ function SignIn() {
     <div>
       <div>הכנס מספר זהות</div>
       <input onChange={(e) => { setId(e.target.value) }}></input>
+      <button onClick={goToChoose}>כניסה</button>
     </div>)
 }
 export default SignIn;

@@ -7,25 +7,24 @@ import signUp from './signUp'
 const HomePage = () => {
   let history = useHistory();
 
-  function goToChoose() {
-    history.push("/choose");
-  }
-  function goToNewtUser() {
+  function goToNewUser() {
     history.push("/signUp");
   }
-
+  function goToExisttUser() {
+    history.push("/signIn");
+  }
 
   return (
     <div>
       <h1 className='title'> Read In Click </h1>
       <br></br>
       <div className='wrrapbt'>
-        <Button variant="contained" color="secondary" onClick={goToNewtUser}>
+        <Button variant="contained" color="secondary" onClick={goToNewUser}>
           למשתמש חדש
 </Button>
         <br></br>
         <br></br>
-        <Button variant="contained" color="secondary" onClick={goToChoose}>
+        <Button variant="contained" color="secondary" onClick={goToExisttUser}>
           למשתמש קיים
 </Button>
       </div>

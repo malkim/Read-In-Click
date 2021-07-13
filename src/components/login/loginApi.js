@@ -1,11 +1,7 @@
 
 export const signUpApi = (user) => {
-    console.log("user", user);
-    return fetch(`http://localhost:3000/users/createUser`, {
+    return fetch(`http://localhost:3002/users/createUser`, {
         method: "POST",
-        headers: {
-            'Content-Type': 'application/json;charset=utf-8'
-        },
         body: JSON.stringify(user),
     })
         .then(response => {
@@ -23,11 +19,8 @@ export const signUpApi = (user) => {
 
 export const signInApi = (user) => {
     console.log("user", user);
-    return fetch(`http://localhost:3000/signIn`, {
+    return fetch(`http://localhost:3002/signIn`, {
         method: "POST",
-        headers: {
-            'Content-Type': 'application/json;charset=utf-8'
-        },
         body: JSON.stringify(user),
     })
         .then(response => {
@@ -42,3 +35,6 @@ export const signInApi = (user) => {
             }
         })
 }
+
+
+

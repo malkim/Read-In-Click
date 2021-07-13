@@ -8,7 +8,7 @@ function SignUp() {
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [id, setId] = useState('')
-    const [status, setStatus] = useState('')
+    //const [status, setStatus] = useState('')
 
     const history = useHistory();
 
@@ -21,7 +21,7 @@ function SignUp() {
                 console.log('--error--');
             })
     }
-    let user = { firstName, lastName, id, status }
+    let user = { firstName, lastName, id }
 
     return (<div>
         <div >הכנס שם פרטי</div>
@@ -30,9 +30,9 @@ function SignUp() {
         <input onChange={(e) => { setLastName(e.target.value) }}></input>
         <div>הכנס מספר זהות</div>
         <input onChange={(e) => { setId(e.target.value) }}></input>
-        <div>הכנס סטטוס</div>
-        <input onChange={(e) => { setStatus(e.target.value) }}></input>
-        <button onClick={signUp()}>לשמירת הנתונים</button>
+        {/* <div>הכנס סטטוס</div>
+        <input onChange={(e) => { setStatus(e.target.value) }}></input> */}
+        <button onClick={signUp}>לשמירת הנתונים</button>
     </div>)
 }
 
